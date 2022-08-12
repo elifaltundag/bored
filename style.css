@@ -1,0 +1,37 @@
+:root {
+    --deg: 45deg;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(var(--deg), #159957, #155799);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(var(--deg), #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat; 
+
+    color: white;
+}
+
+button {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: hsl(185, 70%, 80%);
+    cursor: pointer;
+    color: hsl(185, 50%, 20%);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
